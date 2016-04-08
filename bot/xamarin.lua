@@ -444,145 +444,119 @@ Checkout yeo.ir/XamarinPlus
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+    
+📝 ليست دستورات مدیریت گروه :
 
-!info
-Displays general info about the SuperGroup
+🚫 حذف کردن کاربر
+!kick [یوزنیم/یوزر آی دی]
 
-!admins
-Returns SuperGroup admins list
+🚫 بن کردن کاربر
+!ban [یوزنیم/یوزر آی دی]
 
-!owner
-Returns group owner
+🚫 حذف بن کاربر ( آن بن )
+!unban [یوزر آی دی]
 
-!modlist
-Returns Moderators list
-
-!bots
-Lists bots in SuperGroup
-
-!who
-Lists all users in SuperGroup
-
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
-
-!ban
-Bans user from the SuperGroup
-
-!unban
-Unbans user from the SuperGroup
-
-!id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
-
-!id from
-Get ID of user message is forwarded from
-
+🚫 حذف خودتان از گروه
 !kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
 
-!setowner
-Sets the SuperGroup owner
+✅ دريافت ليست اعضا گروه
+!who
 
-!promote [username|id]
-Promote a SuperGroup moderator
+👥 دريافت ليست مديران گروه
+!modlist
 
-!demote [username|id]
-Demote a SuperGroup moderator
+👥 افزودن یک مدیر به گروه
+!promote [یوزنیم]
 
-!setname
-Sets the chat name
+👥 حذف کردن یک مدير
+!demote [یوزنیم]
 
-!setphoto
-Sets the chat photo
+📃 توضيحات گروه
+!about
 
-!setrules
-Sets the chat rules
-
-!setabout
-Sets the about section in chat info(members list)
-
-!save [value] <text>
-Sets extra info for chat
-
-!get [value]
-Retrieves extra info for chat by value
-
-!newlink
-Generates a new group link
-
-!link
-Retireives the group link
-
+📜 قوانين گروه
 !rules
-Retrieves the chat rules
 
+🌅 انتخاب و قفل عکس گروه
+!setphoto
+
+🔖 انتخاب نام گروه
+!setname [نام مورد نظر]
+
+📥 دريافت یوزر آی دی گروه يا کاربر
+!id
+
+🔒 قفل اعضا ، نام گروه ، ربات و ...
 !lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
 
+🔓 باز کردن قفل اعضا ، نام گروه و ...
 !unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
 
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+🔒 سکوت کردن تصاویر متحرک ، عکس و ...
+!mute [all|audio|gifs|photo|video]
 
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
+🔒 خارج کردن از سکوت 
+!unmute [all|audio|gifs|photo|video]
 
-!setflood [value]
-Set [value] as flood sensitivity
+📜 تعیین قوانین گروه
+!set rules [متن قوانین]
 
+📃 تعیین توضیحات گروه
+!set about [متن مورد نظر]
+
+⚙ دریافت تنظیمات گروه 
 !settings
-Returns chat settings
 
+📃 لیست سکوت شدگان
 !muteslist
-Returns mutes for chat
 
-!muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+📃 سکوت نمودن یک کاربر
+!muteuser [یوزرنیم]
 
-!mutelist
-Returns list of muted users in chat
+📌 ساخت / تغيير لينک گروه
+!newlink
 
-!banlist
-Returns SuperGroup ban list
+📌 دريافت لينک گروه
+!link
 
-!clean [rules|about|modlist|mutelist]
+🛃 انتخاب مالک گروه
+!setowner [یوزر آی دی]
 
-!del
-Deletes a message by reply
+🔢 تغيير حساسيت ضد اسپم
+!setflood [5-20]
 
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+✅ دريافت آمار در قالب متن
+!stats
 
-!res [username]
-Returns users name and id by username
+❌ حذف قوانين ، مديران ، اعضا و ...
+!clean [modlist|rules|about]
 
-
+🚸 دريافت گزارشات گروه
 !log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
 
-**You can use "#", "!", or "/" to begin all commands
+🚸 دريافت ليست کاربران بن شده
+!banlist
 
-*Only owner can add members to SuperGroup
-(use invite link to invite)
+💬 توضيحات ضد اسپم
+!xamarin
 
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
+💬 راهنمای ربات (همین متن)
+!help
 
-*Only owner can use res, setowner, promote, demote, and log commands
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
+⚠️ هرگونه سوال یا مشکل در ربات
+را از طریق دستور فیدبک برای مدیران
+ربات ارسال و منتظر جواب باشید.
+
+⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
+
+⚠️  تنها مديران ميتوانند ربات ادد کنند. 
+
+⚠️  تنها معاونان و مديران ميتوانند 
+جزييات مديريتی گروه را تغيير دهند.
+
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 
 ]],
   }
